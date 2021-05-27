@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nerko+One&display=swap');
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Nerko One', cursive;
+     background-color: #a9d9bc;
+     margin: 0;
+     padding-top: 70px;
+}
+
+nav {
+     font-family: 'Montserrat', sans-serif;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: black;
+     width: 100%;
+     z-index: 10;
+}
+
+nav ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+nav ul li {
+     margin: 0 50px;
+}
+
+nav ul li a {
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 1em;
+}
+
+nav ul li a:hover {
+     text-decoration: underline;
+}
+
+#main {
+     text-align: center;
+     min-width: 400px;
+     max-width: 100%;
+
+}
+
+#main h1 {
+     font-family: 'Nerko One', cursive;
+     font-size: 12vw;
+     margin: 0;
+     padding: 0;
+     line-height: 1.5em;
+}
+
+#main p {
+     font-family: 'Montserrat', sans-serif;
+     margin-top: 0;
+     margin-bottom: 20px;
+     font-size: 3vw;
+}
+
+#img-div {
+     background-color: white;
+     margin-left: 10px;
+     margin-right: 10px;
+     padding: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 25px;
+}
+
+#image {
+     max-width: 100%;
+     display: block;
+     border-radius: 25px;
+}
+
+#img-caption {
+     font-family: 'Montserrat', sans-serif;
+     margin-top: 10px;
+     font-size: 2vw;
+}
+
+#tribute-info {
+     text-align: center;
+     margin: 50px auto;
+}
+
+#tribute-info h2 {
+     font-size: 5em;
+     margin: 0;
+}
+
+#tribute-info ul {
+     display: flex;
+     list-style: none;
+     padding: 0;
+     justify-content: center;
+}
+
+#tribute-info ul li {
+     width: 200px;
+     height: 200px;
+     margin: 5px;
+}
+
+.song {
+     display: flex;
+     position: relative;
+}
+
+.song .song-img {
+     width: 100%;
+     height: 100%;
+     border-radius: 25px;
+}
+
+.song .song-overlay {
+     background-color: black;
+     color: white;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 25px;
+     opacity: 0;
+     transition: .5s;
+}
+
+.song .song-overlay:hover {
+     opacity: 1;
+}
+
+.release-date {
+     font-family: 'Montserrat', sans-serif;
+     font-size: .8em;
+}
+
+.song-title {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     text-transform: uppercase;
+     margin-top: 5px;
+}
+
+#videos {
+     text-align: center;
+}
+
+#videos h2 {
+     font-size: 5em;
+     margin-bottom: 20px;
+}
+
+.video-list {
+     margin-top: 30px;
+}
+
+#follow {
+     font-family: 'Montserrat', sans-serif;
+     text-align: center;
+     background-color: black;
+     margin-top: 20px;
+     padding: 10px 0;
+}
+
+#follow h2 {
+     font-size: 3em;
+     color: white;
+     margin: 0;
+}
+
+#follow h3 {
+     font-size: 1em;
+     color: white;
+     margin: 0;
+}
+
+#follow ul {
+     list-style-type: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+}
+
+#follow li {
+     font-size: 2em;
+     margin: 0 10px;
+}
+
+#follow li a {
+     color: white;
+}
+
+@media (max-width: 700px) {
+     #tribute-info ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .video-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .video-list iframe {
+          width: 460px;
+          height: 215px;
+          margin: 10px 0;
+     }
+}
